@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const adminprefix = "P";
-const devs = ['385471999981518848', '385471999981518848'];
+const adminprefix = "+";
+const devs = ['410757271438491648', '410757271438491648'];
  
 
 client.on('message', message => {
@@ -31,7 +31,7 @@ return message.reply("**You Can't Change Your Name ,Only After Two Hours :>**");
 } else
   if (message.content.startsWith(adminprefix + 'setavatar')) {
 client.user.setAvatar(argresult);
-  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
+  message.channel.sendMessage(`**${argresult}** : ?? ???? ???? ?????`);
       } else     
 if (message.content.startsWith(adminprefix + 'st')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
@@ -39,9 +39,9 @@ if (message.content.startsWith(adminprefix + 'st')) {
 }
   if(message.content === adminprefix + "restart") {
     if (!devs.includes(message.author.id)) return;
-        message.channel.send(`:warning:️ **Bot restarting by ${message.author.username}**`);
+        message.channel.send(`:warning:? **Bot restarting by ${message.author.username}**`);
       console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-      console.log(`⚠️ Bot restarting... ⚠️`);
+      console.log(`?? Bot restarting... ??`);
       console.log("===============================================\n\n");
       client.destroy();
       child_process.fork(__dirname + "/bot.js");
