@@ -50,4 +50,4 @@ if (message.content.startsWith(adminprefix + 'st')) {
 
 });
 
-client.login('process.env.BOT_TOKEN');
+client.login('mfa.Jskkmsri2wwBKZASQEAeN1KAmWVf8ofaHxwmrNFsv0R6HEWcpPBCOe6W7cPxsHSzdZ6PKqOF_uWK9evqi-hE');
